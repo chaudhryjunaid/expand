@@ -1,13 +1,6 @@
 'use strict';
 
 var cache = {};
-var utils = require('lazy-cache')(require);
-var fn = require;
-require = utils;
-
-/**
- * Lazily required module dependencies
- */
 
 require('get-value');
 require('is-primitive', 'isPrimitive');
@@ -15,7 +8,6 @@ require('kind-of', 'typeOf');
 require('get-value', 'get');
 require('regex-flags');
 require('engine');
-require = fn;
 
 /**
  * Get the regex from `engine/utils`
